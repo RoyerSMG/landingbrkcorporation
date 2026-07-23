@@ -151,14 +151,14 @@ export const Main = () => {
                     <h2 style={{marginBottom: '10px'}}>Nuestra Empresa</h2>
                     <Swiper
                         modules={[Autoplay]}
-                        autoplay={{ delay: 4000, disableOnInteraction: false }}
+                        autoplay={{ delay: 5000, disableOnInteraction: false }}
                         loop={true}
                         className="mt-4 w-full h-full"
                     >
                         <SwiperSlide>
                             <div className="empresa-card flex flex-row items-center">
                                 <div className="empresa-card-img w-1/2">
-                                    <img src={mision} alt="Misión" className="w-full h-full object-cover rounded-lg" />
+                                    <img src={mision} alt="Misión" className="w-full h-full rounded-lg" />
                                 </div>
                                 <div className="empresa-card-content w-1/2">
                                     <h3 className="text-xl font-bold mb-2">Misión</h3>
@@ -172,7 +172,7 @@ export const Main = () => {
                         <SwiperSlide>
                             <div className="empresa-card flex flex-row items-center">
                                 <div className="empresa-card-img w-1/2">
-                                    <img src={vision} alt="Visión" className="w-full h-full object-cover rounded-lg" />
+                                    <img src={vision} alt="Visión" className="w-full h-full rounded-lg" />
                                 </div>
                                 <div className="empresa-card-content w-1/2">
                                     <h3 className="text-xl font-bold mb-2">Visión</h3>

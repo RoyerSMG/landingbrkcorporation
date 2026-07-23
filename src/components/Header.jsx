@@ -14,22 +14,24 @@ export const Header = () => {
     ];
 
     useEffect(() => {
-        const sections = document.querySelectorAll("section[id]");
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id);
-                    }
-                });
-            },
-            {
-                threshold: 0.5
-            }
-        );
+        const handleScroll = () => {
+            const sections = document.querySelectorAll("section[id]");
+            const scrollPosition = window.scrollY + 120;
+            sections.forEach((section) => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                if (
+                    scrollPosition >= top &&
+                    scrollPosition < top + height
+                ) {
+                    setActiveSection(section.id);
+                }
+            });
+        };
 
-        sections.forEach((section) => observer.observe(section));
-        return () => observer.disconnect();
+        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     useEffect(() => {
@@ -42,20 +44,20 @@ export const Header = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const linkStyle = {
-        textDecoration: 'none',
-        color: 'var(--text-primary)',
-        fontSize: '1rem',
-        fontWeight: '500'
-    };
+    // const linkStyle = {
+    //     textDecoration: 'none',
+    //     color: 'var(--text-primary)',
+    //     fontSize: '1rem',
+    //     fontWeight: '500'
+    // };
 
-    const activeLinkStyle = {
-        color: "#C8102E",
-        fontWeight: "700",
-        borderBottom: "2px solid #C8102E",
-        paddingBottom: "4px",
-        transition: "0.3s"
-    };
+    // const activeLinkStyle = {
+    //     color: "#C8102E",
+    //     fontWeight: "700",
+    //     borderBottom: "2px solid #C8102E",
+    //     paddingBottom: "4px",
+    //     transition: "0.3s"
+    // };
 
     return (
         <header>
@@ -79,8 +81,11 @@ export const Header = () => {
                         <li key={link.id}>
                             <a
                                 href={`#${link.id}`}
-                                className={activeSection === link.id ? "active" : ""}
-                                onClick={() => setMenuOpen(false)}
+                                className={
+                                    activeSection === link.id
+                                        ? "nav-link active"
+                                        : "nav-link"
+                                }
                             >
                                 {link.label}
                             </a>

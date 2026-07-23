@@ -119,7 +119,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:13,
+        id:14,
         city:"Duitama",
         regional:"Centro",
         position:[5.815543, -73.030469],
@@ -128,7 +128,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:14,
+        id:15,
         city:"Ibague",
         regional:"Sur-Occidente",
         position:[4.437759, -75.215016],
@@ -137,7 +137,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:15,
+        id:16,
         city:"Manizales",
         regional:"Sur-Occidente",
         position:[5.054056, -75.498961],
@@ -146,7 +146,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:16,
+        id:17,
         city:"Monteria",
         regional:"Antioquia",
         position:[8.757862, -75.882815],
@@ -155,7 +155,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:17,
+        id:18,
         city:"Neiva",
         regional:"Antioquia",
         position:[2.935669, -75.288077],
@@ -164,7 +164,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:18,
+        id:19,
         city:"Pasto",
         regional:"Sur-Occidente",
         position:[1.216161, -77.282976],
@@ -173,7 +173,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:19,
+        id:20,
         city:"Pereira",
         regional:"Sur-Occidente",
         position:[4.815905, -75.716327],
@@ -182,7 +182,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:20,
+        id:21,
         city:"Riohacha",
         regional:"Norte",
         position:[11.550524, -72.905459],
@@ -191,7 +191,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:21,
+        id:22,
         city:"Medellin",
         regional:"Antioquia",
         position:[6.164376, -75.367112],
@@ -200,7 +200,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:22,
+        id:23,
         city:"San Gil",
         regional:"Antioquia",
         position:[6.556723, -73.148505],
@@ -209,7 +209,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:23,
+        id:24,
         city:"Santa Marta",
         regional:"Norte",
         position:[11.245539, -74.213681],
@@ -218,7 +218,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:24,
+        id:25,
         city:"Sincelejo",
         regional:"Antioquia",
         position:[9.300989, -75.395282],
@@ -227,7 +227,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:24,
+        id:26,
         city:"Tulua",
         regional:"Sur-Occidente",
         position:[4.062517, -76.194953],
@@ -236,7 +236,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:25,
+        id:27,
         city:"Valledupar",
         regional:"Norte",
         position:[10.475412, -73.246837],
@@ -245,7 +245,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:26,
+        id:28,
         city:"Yoapl",
         regional:"Antioquia",
         position:[5.336368, -72.395470],
@@ -254,7 +254,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:27,
+        id:29,
         city:"Girardot",
         regional:"Centro",
         position:[4.296765, -74.807819],
@@ -263,7 +263,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:28,
+        id:30,
         city:"Honda",
         regional:"Centro",
         position:[5.207967, -74.738156],
@@ -272,7 +272,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:29,
+        id:31,
         city:"Ipiales",
         regional:"Sur-Occidente",
         position:[0.826390, -77.642784],
@@ -281,7 +281,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:30,
+        id:32,
         city:"Popayan",
         regional:"Sur-Occidente",
         position:[2.450196, -76.610414],
@@ -290,7 +290,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:31,
+        id:33,
         city:"Tumaco",
         regional:"Sur-Occidente",
         position:[1.809156, -78.767251],
@@ -299,7 +299,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:32,
+        id:34,
         city:"Pereira",
         regional:"SUr-Occidente",
         position:[4.815921, -75.716323],
@@ -308,7 +308,7 @@ export const locations = [
         phone:"(604) 444-4444",
     },
     {
-        id:33,
+        id:35,
         city:"Quibdo",
         regional:"Antioquia",
         position:[5.692231, -76.659264],
