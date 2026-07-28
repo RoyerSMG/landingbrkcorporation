@@ -13,6 +13,7 @@ import { operations } from '../data/operations';
 import OperationModal from "./OperationModal";
 import CoverageMap from "./maps/CoverageMap";
 import CoverageSection from "./maps/CoverageSection";
+import Hero from "./hero/Hero";
 
 export const Main = () => {
     const [selectedOperation, setSelectedOperation] = useState(null);
@@ -26,35 +27,11 @@ export const Main = () => {
     const closeModal = () => {
         setIsModalOpen(false);
     };
-    
+
     return (
         <main className="pt-16">
-            <section
-                id="inicio"
-                className="hero min-h-[calc(100vh-4rem)] flex items-center relative overflow-hidden text-white"
-            >
-                {/* CAPA 1: Imagen de fondo */}
-                <div
-                    className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: `url(${slider})` }}
-                />
 
-                {/* CAPA 2: Blur */}
-                <div className="absolute inset-0 w-full h-full backdrop-blur-[5px]"></div>
-
-                {/* CAPA 3: Overlay oscuro */}
-                <div className="hero-overlay"></div>
-
-                {/* CAPA 4: Contenido */}
-                <div className="container-hero w-4/5 max-w-7xl mx-auto flex flex-col items-center md:items-start gap-2 text-center md:text-left relative z-10">
-                    <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight drop-shadow-md">
-                        Coorporación Brinks De Colombia
-                    </h2>
-                    <p className="text-xl md:text-2xl text-slate-200 font-medium drop-shadow-sm">
-                        Centro Control Monitoreo
-                    </p>
-                </div>
-            </section>
+            <Hero/>
 
             <section id="operaciones">
                 <div className="w-4/5 max-w-7xl mx-auto">
@@ -148,7 +125,7 @@ export const Main = () => {
 
             <section id="empresa">
                 <div className="w-4/5 max-w-7xl mx-auto">
-                    <h2 style={{marginBottom: '10px'}}>Nuestra Empresa</h2>
+                    <h2 style={{ marginBottom: '10px' }}>Nuestra Empresa</h2>
                     <Swiper
                         modules={[Autoplay]}
                         autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -163,7 +140,7 @@ export const Main = () => {
                                 <div className="empresa-card-content w-1/2">
                                     <h3 className="text-xl font-bold mb-2">Misión</h3>
                                     <p>
-                                        Proporcionar soluciones de monitoreo avanzadas para garantizar la seguridad y eficiencia de nuestros clientes.
+                                        Liderar la gestión remota de riesgos operacionales mediante la integración de tecnología, análisis de información y talento humano especializado, fortaleciendo la cultura de control, anticipando amenazas y contribuyendo a la continuidad y protección de las operaciones.
                                     </p>
                                 </div>
                             </div>
@@ -177,7 +154,7 @@ export const Main = () => {
                                 <div className="empresa-card-content w-1/2">
                                     <h3 className="text-xl font-bold mb-2">Visión</h3>
                                     <p>
-                                        Ser líderes en la industria de monitoreo, ofreciendo servicios innovadores y confiables que superen las expectativas de nuestros clientes.
+                                        Ser reconocidos como el principal Centro de Gestión Remota de Riesgos de la industria de logistica de valores, referente en innovación, análisis de información y operación centralizada de controles críticos de seguridad, contribuyendo a organizaciones más seguras, resilientes y eficientes.
                                     </p>
                                 </div>
                             </div>
@@ -188,7 +165,7 @@ export const Main = () => {
 
             <section id="cobertura">
                 <div className="w-4/5 max-w-7xl mx-auto">
-                    <h2 style={{ color: 'var(--text-primary)', marginBottom: '10px'}}>Cobertura Nacional</h2>
+                    <h2 style={{ color: 'var(--text-primary)', marginBottom: '10px' }}>Cobertura Nacional</h2>
 
                     <CoverageSection />
 

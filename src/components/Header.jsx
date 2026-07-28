@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from '../assets/images/default2.png';
+import logo from '../../public/logobrk.ico';
 
 export const Header = () => {
     const [activeSection, setActiveSection] = useState("inicio");
@@ -9,8 +9,8 @@ export const Header = () => {
         { id: "inicio", label: "Inicio" },
         { id: "operaciones", label: "Operaciones" },
         { id: "empresa", label: "Nuestra Empresa" },
-        { id: "cobertura", label: "Cobertura" },
-        { id: "contacto", label: "Contacto" }
+        { id: "cobertura", label: "Cobertura" }
+        // { id: "contacto", label: "Contacto" }
     ];
 
     useEffect(() => {
@@ -64,15 +64,16 @@ export const Header = () => {
             <a href="#inicio" style={{ textDecoration: 'none' }}>
                 <h1 style={{ color: 'var(--text-primary)' }}>
                     <img src={logo} alt="Logo" />
-                    Central de Monitoreo
+                    Control y Monitoreo
                 </h1>
             </a>
 
             <button
                 className="menu-toggle"
                 onClick={() => setMenuOpen(!menuOpen)}
+                aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
             >
-                ☰
+                {menuOpen ? "✕" : "☰"}
             </button>
 
             <nav className={menuOpen ? "nav open" : "nav"}>
