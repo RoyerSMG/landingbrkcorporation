@@ -67,7 +67,7 @@ export const locations = [
     {
         id:8,
         city:"Aguachica",
-        regional:"Norte",
+        regional:"Antioquia",
         position:[10.981313, -74.787627],
         headquarter:"BRK Barranquilla",
         address:"Cl. 47 #40-18, Nte. Centro Historico, Barranquilla, Atlántico",
@@ -130,7 +130,7 @@ export const locations = [
     {
         id:15,
         city:"Ibague",
-        regional:"Sur-Occidente",
+        regional:"Occidente",
         position:[4.437759, -75.215016],
         headquarter:"BRK Ibague",
         address:"Cl. 39 # 5-84, Ibagué, Tolima",
@@ -139,7 +139,7 @@ export const locations = [
     {
         id:16,
         city:"Manizales",
-        regional:"Sur-Occidente",
+        regional:"Occidente",
         position:[5.054056, -75.498961],
         headquarter:"BRK Aguachica",
         address:"Cl. 62 #33-15, Manizales, Caldas",
@@ -157,7 +157,7 @@ export const locations = [
     {
         id:18,
         city:"Neiva",
-        regional:"Antioquia",
+        regional:"Occidente",
         position:[2.935669, -75.288077],
         headquarter:"BRK Neiva",
         address:"Cra. 7a #17-2 a 17-76, Neiva, Huila",
@@ -166,7 +166,7 @@ export const locations = [
     {
         id:19,
         city:"Pasto",
-        regional:"Sur-Occidente",
+        regional:"Occidente",
         position:[1.216161, -77.282976],
         headquarter:"BRK Pasto",
         address:"Cra. 28 #14-2 a 14-94, Pasto, Nariño",
@@ -175,7 +175,7 @@ export const locations = [
     {
         id:20,
         city:"Pereira",
-        regional:"Sur-Occidente",
+        regional:"Occidente",
         position:[4.815905, -75.716327],
         headquarter:"BRK Pereira",
         address:"Cra. 8bis #45-09, Pereira, Risaralda",
@@ -229,7 +229,7 @@ export const locations = [
     {
         id:26,
         city:"Tulua",
-        regional:"Sur-Occidente",
+        regional:"Occidente",
         position:[4.062517, -76.194953],
         headquarter:"BRK Tulua",
         address:"Calle 50 # 41 - 98 bodega C7, Tuluá, Valle del Cauca",
@@ -247,7 +247,7 @@ export const locations = [
     {
         id:28,
         city:"Yoapl",
-        regional:"Antioquia",
+        regional:"Centro",
         position:[5.336368, -72.395470],
         headquarter:"BRK Yopal",
         address:"a 22-104, Cra. 19 #222, Yopal, Casanare",
@@ -274,7 +274,7 @@ export const locations = [
     {
         id:31,
         city:"Ipiales",
-        regional:"Sur-Occidente",
+        regional:"Occidente",
         position:[0.826390, -77.642784],
         headquarter:"TVS Ipiales",
         address:"Cl. 17 #7-75, Ipiales, Nariño",
@@ -283,7 +283,7 @@ export const locations = [
     {
         id:32,
         city:"Popayan",
-        regional:"Sur-Occidente",
+        regional:"Occidente",
         position:[2.450196, -76.610414],
         headquarter:"TVS Popayan",
         address:"Tv. 9 Nte. #3-458 a 3-500, Comuna 1, Popayán, Cauca",
@@ -292,7 +292,7 @@ export const locations = [
     {
         id:33,
         city:"Tumaco",
-        regional:"Sur-Occidente",
+        regional:"Occidente",
         position:[1.809156, -78.767251],
         headquarter:"TVS Tumaco",
         address:"Cra. 9 # 7A-34, Tumaco, San Andres de Tumaco, Nariño",
@@ -301,7 +301,7 @@ export const locations = [
     {
         id:34,
         city:"Pereira",
-        regional:"SUr-Occidente",
+        regional:"Occidente",
         position:[4.815921, -75.716323],
         headquarter:"TVS Pereira",
         address:"Cra. 8bis #45-20 a 45-80, Pereira, Risaralda",

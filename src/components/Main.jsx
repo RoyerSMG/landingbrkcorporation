@@ -30,7 +30,6 @@ export const Main = () => {
 
     return (
         <main className="pt-16">
-
             <Hero/>
 
             <section id="operaciones">
@@ -128,7 +127,7 @@ export const Main = () => {
                     <h2 style={{ marginBottom: '10px' }}>Nuestra Empresa</h2>
                     <Swiper
                         modules={[Autoplay]}
-                        autoplay={{ delay: 5000, disableOnInteraction: false }}
+                        autoplay={{ delay: 12000, disableOnInteraction: false }}
                         loop={true}
                         className="mt-4 w-full h-full"
                     >

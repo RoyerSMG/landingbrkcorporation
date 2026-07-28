@@ -45,26 +45,17 @@ export default function Hero() {
                             >
 
                                 {capabilityGroups.map((group, index) => (
-
                                     <SwiperSlide key={index}>
-
                                         <div className="dashboard-grid">
-
                                             {group.map(capability => (
-
                                                 <CapabilityCard
                                                     key={capability.id}
                                                     capability={capability}
                                                 />
-
                                             ))}
-
                                         </div>
-
                                     </SwiperSlide>
-
                                 ))}
-
                             </Swiper>
                         }
                     </div>
@@ -80,9 +71,9 @@ export default function Hero() {
                         El Centro de Control y Monitoreo no es una central de alarmas; es una capacidad organizacional que integra tecnología, talento humano y gestión remota de riesgos para supervisar y operar los controles críticos que protegen las personas, los activos y la continuidad de las operaciones.
                     </p>
                     <div className="hero-buttons">
-                        <button className="btn-primary">
-                            Conocer más
-                        </button>
+                        <a href="#operaciones">
+                            <button className="btn-primary">Conocer más</button>
+                        </a>
                     </div>
                 </div>
             </div>

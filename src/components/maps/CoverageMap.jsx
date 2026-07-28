@@ -27,7 +27,7 @@ export default function CoverageMap({
             center={[4.5709, -74.2973]}
             zoom={6}
             style={{
-                height: "500px",
+                height: "550px",
                 width: "100%",
                 borderRadius: "15px",
                 boxShadow: '0 15px 35px rgba(0,0,0,.25)'
