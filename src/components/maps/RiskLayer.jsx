@@ -5,7 +5,7 @@ export default function RiskLayer() {
     const [geoData, setGeoData] = useState(null);
 
     useEffect(() => {
-        fetch("../../../public/geojson/municipios.geojson")
+        fetch("/geojson/municipios.geojson")
             .then(response => response.json())
             .then(data => setGeoData(data));
     }, []);
