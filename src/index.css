@@ -137,7 +137,7 @@ header{
   color: white;
 
   h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -344,6 +344,8 @@ header{
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
+
+        text-align: justify;
       }
 
       .btn-detalle {

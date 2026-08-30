@@ -139,7 +139,7 @@ export const Main = () => {
                                 <div className="empresa-card-content w-1/2">
                                     <h3 className="text-xl font-bold mb-2">Misión</h3>
                                     <p>
-                                        Liderar la gestión remota de riesgos operacionales mediante la integración de tecnología, análisis de información y talento humano especializado, fortaleciendo la cultura de control, anticipando amenazas y contribuyendo a la continuidad y protección de las operaciones.
+                                        Transformar datos en información para la toma de decisiones estratégicas, integrando tecnología, análisis de riesgos, estadísticas de comportamiento y el talento humano especializado. Contribuyendo asi a la seguridad, continuidad y crecimiento sostenible de la organización.
                                     </p>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@ export const Main = () => {
                                 <div className="empresa-card-content w-1/2">
                                     <h3 className="text-xl font-bold mb-2">Visión</h3>
                                     <p>
-                                        Ser reconocidos como el principal Centro de Gestión Remota de Riesgos de la industria de logistica de valores, referente en innovación, análisis de información y operación centralizada de controles críticos de seguridad, contribuyendo a organizaciones más seguras, resilientes y eficientes.
+                                        Consolidarnos como la principal Central de Inteligencia y Gestión de Riesgos de la industria, referente en innovación, anticipación de amenazas y fortalecimiento de la resiliencia organizacional.
                                     </p>
                                 </div>
                             </div>

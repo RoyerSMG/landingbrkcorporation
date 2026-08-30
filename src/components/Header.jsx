@@ -64,7 +64,7 @@ export const Header = () => {
             <a href="#inicio" style={{ textDecoration: 'none' }}>
                 <h1 style={{ color: 'var(--text-primary)' }}>
                     <img src={logo} alt="Logo" />
-                    Control y Monitoreo
+                    Central de Inteligencia y Gestión Integral de Riesgos
                 </h1>
             </a>
 

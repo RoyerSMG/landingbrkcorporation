@@ -63,9 +63,8 @@ export default function Hero() {
 
                 <div className="hero-info">
                     <h2>
-                        CENTRO DE CONTROL
-                        <br />
-                        Y MONITOREO
+                        CENTRAL DE INTELIGENCIA<br />
+                        Y GESTIÓN INTEGRAL DE RIESGOS
                     </h2>
                     <p>
                         El Centro de Control y Monitoreo no es una central de alarmas; es una capacidad organizacional que integra tecnología, talento humano y gestión remota de riesgos para supervisar y operar los controles críticos que protegen las personas, los activos y la continuidad de las operaciones.
