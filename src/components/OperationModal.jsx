@@ -22,7 +22,7 @@ export default function OperationModal({
                 <p>
                     {operation.description}
                 </p>
-                <h3>
+                {/* <h3>
                     Funciones
                 </h3>
                 <ul>
@@ -33,7 +33,7 @@ export default function OperationModal({
                             </li>
                         ))
                     }
-                </ul>
+                </ul> */}
             </div>
 
             <div className="modal-footer">

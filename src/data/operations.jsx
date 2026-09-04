@@ -1,11 +1,16 @@
 import ejemplo from "../assets/images/puerta5.jpeg"
+import brkSede from "../assets/images/brk_sede.png"
+import brkBoveda from "../assets/images/brk_boveda.png"
+import brkVideo from "../assets/images/brk_video.png"
+import brkBiometria from "../assets/images/brk_biometria.png"
+import brkEspeciales from "../assets/images/brk_especiales.png"
 import alarmaPrincipalPDF from "../assets/documents/pruebaOperation.pdf"
 
 export const operations = [
     {
         id: 1,
-        title: "Seg. Electrónica y Monitoreo de Alarmas Sedes",
-        image: ejemplo,
+        title: "Seg. Electrónica y Monitoreo Sedes",
+        image: brkSede,
         document: alarmaPrincipalPDF,
         shortDescription: "Monitorear, analizar e interpretar la información generada por los sistemas remotos de alarma y demás medios tecnológicos de seguridad, con el fin de identificar, evaluar y gestionar oportunamente los riesgos y eventos de seguridad",
         description: "Monitorear, analizar e interpretar la información generada por los sistemas remotos de alarma y demás medios tecnológicos de seguridad, con el fin de identificar, evaluar y gestionar oportunamente los riesgos y eventos de seguridad, centralizando la información en la plataforma de monitoreo para la toma de decisiones, escalamiento y activación de los protocolos de respuesta correspondientes, garantizando la protección de las personas, los activos y las operaciones de la organización.",
@@ -18,8 +23,8 @@ export const operations = [
     },
     {
         id: 2,
-        title: "Seg. Electrónica y Monitoreo de Alarmas Bóvedas",
-        image: ejemplo,
+        title: "Seg. Electrónica y Monitoreo Bóvedas",
+        image: brkBoveda,
         document: alarmaPrincipalPDF,
         shortDescription: "Gestionar los riesgos asociados a la seguridad de las bóvedas mediante el monitoreo centralizado, análisis e interpretación de los eventos generados por los sistemas tecnológicos de seguridad, identificando amenazas",
         description: "Gestionar los riesgos asociados a la seguridad de las bóvedas mediante el monitoreo centralizado, análisis e interpretación de los eventos generados por los sistemas tecnológicos de seguridad, identificando amenazas, evaluando su impacto y probabilidad, y aplicando los protocolos de respuesta establecidos para contribuir a la protección de los activos bajo custodia, la continuidad de la operación y la mejora continua de los controles de seguridad.",
@@ -31,7 +36,7 @@ export const operations = [
     {
         id: 3,
         title: "Videoverificación y Control Remoto de Seg. Electrónica",
-        image: ejemplo,
+        image: brkVideo,
         document: alarmaPrincipalPDF,
         shortDescription: "Contribuir a la gestión integral del riesgo mediante la supervisión remota de los procesos de apertura de sucursales, la identificación y evaluación de amenazas, el control de accesos a áreas de alta seguridad y la verificación del",
         description: "Contribuir a la gestión integral del riesgo mediante la supervisión remota de los procesos de apertura de sucursales, la identificación y evaluación de amenazas, el control de accesos a áreas de alta seguridad y la verificación del cumplimiento de los estándares de seguridad electrónica, normas internas CRS y requisitos de retención de video, fortaleciendo la protección de las personas, los activos y las operaciones críticas de la organización.",
@@ -43,7 +48,7 @@ export const operations = [
     {
         id: 4,
         title: "Operaciones Especiales",
-        image: ejemplo,
+        image: brkEspeciales    ,
         document: alarmaPrincipalPDF,
         shortDescription: "Contribuir a la gestión integral del riesgo en las operaciones especiales mediante la supervisión, monitoreo y análisis de eventos asociados a operaciones críticas, utilizando sistemas de geolocalización,",
         description: "Contribuir a la gestión integral del riesgo en las operaciones especiales mediante la supervisión, monitoreo y análisis de eventos asociados a operaciones críticas, utilizando sistemas de geolocalización, video y herramientas tecnológicas de seguridad, con el fin de identificar, evaluar y gestionar oportunamente los riesgos, asegurar el cumplimiento de los compromisos contractuales y fortalecer la efectividad de los controles definidos por la organización.",
@@ -91,7 +96,7 @@ export const operations = [
     {
         id: 8,
         title: "Control de Acceso de Alta Seguridad",
-        image: ejemplo,
+        image: brkBiometria,
         document: alarmaPrincipalPDF,
         shortDescription: "Contribuir a la gestión integral del riesgo mediante la supervisión remota de los procesos de apertura de sucursales, la identificación y evaluación de amenazas, el control de accesos a áreas de alta seguridad y la verificación",
         description: "Contribuir a la gestión integral del riesgo mediante la supervisión remota de los procesos de apertura de sucursales, la identificación y evaluación de amenazas, el control de accesos a áreas de alta seguridad y la verificación del cumplimiento de los estándares de seguridad electrónica, normas internas CRS y requisitos de retención de video, fortaleciendo la protección de las personas, los activos y las operaciones críticas de la organización.",

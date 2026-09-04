@@ -27,7 +27,9 @@ export default function Hero() {
             />
             <div className="hero-overlay" />
             <div className="hero-content">
-                <div className="hero-dashboard">
+                <div 
+                    className="hero-dashboard"
+                    data-aos="fade-right">
                     <h3>
                         Capacidades
                     </h3>
@@ -67,7 +69,7 @@ export default function Hero() {
                         Y GESTIÓN INTEGRAL DE RIESGOS
                     </h2>
                     <p>
-                        El Centro de Control y Monitoreo no es una central de alarmas; es una capacidad organizacional que integra tecnología, talento humano y gestión remota de riesgos para supervisar y operar los controles críticos que protegen las personas, los activos y la continuidad de las operaciones.
+                        No es una central de alarmas; es una capacidad organizacional que integra tecnología, talento humano y gestión remota de riesgos para supervisar y operar los controles críticos que protegen las personas, los activos y la continuidad de las operaciones.
                     </p>
                     <div className="hero-buttons">
                         <a href="#operaciones">

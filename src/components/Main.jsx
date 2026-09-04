@@ -32,7 +32,10 @@ export const Main = () => {
         <main className="pt-16">
             <Hero/>
 
-            <section id="operaciones">
+            <section 
+                id="operaciones"
+                data-aos="fade-up"
+            >
                 <div className="w-4/5 max-w-7xl mx-auto">
                     <h2 className="text-2xl font-semibold">Nuestras Operaciones</h2>
                     <div className="container-operations flex flex-wrap justify-center mt-4">
@@ -122,14 +125,17 @@ export const Main = () => {
                 </div>
             </section>
 
-            <section id="empresa">
+            <section 
+                id="empresa"
+            >
                 <div className="w-4/5 max-w-7xl mx-auto">
-                    <h2 style={{ marginBottom: '10px' }}>Nuestra Empresa</h2>
+                    <h2 style={{ marginBottom: '10px' }} data-aos="fade-up">Nuestra Empresa</h2>
                     <Swiper
                         modules={[Autoplay]}
                         autoplay={{ delay: 12000, disableOnInteraction: false }}
                         loop={true}
                         className="mt-4 w-full h-full"
+                        data-aos="fade-up"
                     >
                         <SwiperSlide>
                             <div className="empresa-card flex flex-row items-center">
@@ -159,10 +165,83 @@ export const Main = () => {
                             </div>
                         </SwiperSlide>
                     </Swiper>
+
+                    <div className="operational-staff">
+                        <div className="operational-staff-header" data-aos="fade-up">
+                            <h3>Personal Operativo</h3>
+                            <p>
+                                Nuestro talento humano especializado para la operación
+                                y gestión de la seguridad.
+                            </p>
+                        </div>
+
+                        <div className="kpi-grid" data-aos="fade-up">
+                            {/* OPERADORES */}
+                            <div
+                                className="staff-kpi"
+                                data-tooltip="Profesionales encargados del monitoreo y gestión de eventos en tiempo real."
+                            >
+                                <div className="kpi-icon">
+                                    👤
+                                </div>
+                                <div className="kpi-info">
+                                    <span className="kpi-label">
+                                        Operadores
+                                    </span>
+                                    <strong className="kpi-value">
+                                        28
+                                    </strong>
+                                </div>
+                                <span className="kpi-tooltip">
+                                    Personal encargado del monitoreo continuo,
+                                    gestión de alarmas y atención de eventos críticos.
+                                </span>
+                            </div>
+
+                            {/* TECNICOS */}
+                            <div className="staff-kpi">
+                                <div className="kpi-icon">
+                                    🔧
+                                </div>
+                                <div className="kpi-info">
+                                    <span className="kpi-label">
+                                        Técnicos
+                                    </span>
+                                    <strong className="kpi-value">
+                                        4
+                                    </strong>
+                                </div>
+                                <span className="kpi-tooltip">
+                                    Personal técnico especializado en soporte,
+                                    mantenimiento y operación de sistemas tecnológicos.
+                                </span>
+                            </div>
+
+                            {/* COORDINADORES */}
+                            <div className="staff-kpi">
+                                <div className="kpi-icon">
+                                    👔
+                                </div>
+                                <div className="kpi-info">
+                                    <span className="kpi-label">
+                                        Coordinadores
+                                    </span>
+                                    <strong className="kpi-value">
+                                        4
+                                    </strong>
+                                </div>
+                                <span className="kpi-tooltip">
+                                    Responsables de coordinar equipos operativos,
+                                    supervisar procesos y garantizar la continuidad
+                                    de la operación.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section id="cobertura">
+            <section id="cobertura" data-aos="fade-up">
                 <div className="w-4/5 max-w-7xl mx-auto">
                     <h2 style={{ color: 'var(--text-primary)', marginBottom: '10px' }}>Cobertura Nacional</h2>
 

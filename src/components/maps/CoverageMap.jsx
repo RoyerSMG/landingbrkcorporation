@@ -6,11 +6,14 @@ import RiskLayer from "./RiskLayer";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import markerBrk from "./icon/marker_brk.ico";
+import markerTvs from "./icon/marker_tvs.ico";
+
 
 import { locations } from "../../data/locations";
 
 const blueIcon = new L.Icon({
-    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png",
+    iconUrl: markerBrk,
     shadowUrl: markerShadow,
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -19,7 +22,7 @@ const blueIcon = new L.Icon({
 });
 
 const greyIcon = new L.Icon({
-    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png",
+    iconUrl: markerTvs,
     shadowUrl: markerShadow,
     iconSize: [25, 41],
     iconAnchor: [12, 41],
