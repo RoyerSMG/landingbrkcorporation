@@ -4,7 +4,7 @@ import brkBoveda from "../assets/images/brk_boveda.png"
 import brkVideo from "../assets/images/brk_video.png"
 import brkBiometria from "../assets/images/brk_biometria.png"
 import brkEspeciales from "../assets/images/brk_especiales.png"
-import brkEspeciales from "../assets/images/brk_Epago.jpg"
+import brkEpago from "../assets/images/brk_Epago.jpg"
 import alarmaPrincipalPDF from "../assets/documents/pruebaOperation.pdf"
 
 export const operations = [
