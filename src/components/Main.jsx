@@ -132,7 +132,7 @@ export const Main = () => {
                     <h2 style={{ marginBottom: '10px' }} data-aos="fade-up">Nuestra Empresa</h2>
                     <Swiper
                         modules={[Autoplay]}
-                        autoplay={{ delay: 12000, disableOnInteraction: false }}
+                        autoplay={{ delay: 15000, disableOnInteraction: false }}
                         loop={true}
                         className="mt-4 w-full h-full"
                         data-aos="fade-up"
