@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duración de la animación en milisegundos
-      once: true, // Animar solo una vez al hacer scroll
+      mirror: true, // Animar solo una vez al hacer scroll
     });
   }, []);
 
