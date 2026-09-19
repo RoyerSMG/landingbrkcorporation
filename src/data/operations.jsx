@@ -4,12 +4,13 @@ import brkBoveda from "../assets/images/brk_boveda.png"
 import brkVideo from "../assets/images/brk_video.png"
 import brkBiometria from "../assets/images/brk_biometria.png"
 import brkEspeciales from "../assets/images/brk_especiales.png"
+import brkEspeciales from "../assets/images/brk_Epago.jpg"
 import alarmaPrincipalPDF from "../assets/documents/pruebaOperation.pdf"
 
 export const operations = [
     {
         id: 1,
-        title: "Seg. Electrónica y Monitoreo Sedes",
+        title: "Seguridad Sedes",
         image: brkSede,
         document: alarmaPrincipalPDF,
         shortDescription: "Monitorear, analizar e interpretar la información generada por los sistemas remotos de alarma y demás medios tecnológicos de seguridad, con el fin de identificar, evaluar y gestionar oportunamente los riesgos y eventos de seguridad",
@@ -23,7 +24,7 @@ export const operations = [
     },
     {
         id: 2,
-        title: "Seg. Electrónica y Monitoreo Bóvedas",
+        title: "Seguridad Bovedas",
         image: brkBoveda,
         document: alarmaPrincipalPDF,
         shortDescription: "Gestionar los riesgos asociados a la seguridad de las bóvedas mediante el monitoreo centralizado, análisis e interpretación de los eventos generados por los sistemas tecnológicos de seguridad, identificando amenazas",
@@ -35,7 +36,7 @@ export const operations = [
     },
     {
         id: 3,
-        title: "Videoverificación y Control Remoto de Seg. Electrónica",
+        title: "Gestión y analítica de video alarmas",
         image: brkVideo,
         document: alarmaPrincipalPDF,
         shortDescription: "Contribuir a la gestión integral del riesgo mediante la supervisión remota de los procesos de apertura de sucursales, la identificación y evaluación de amenazas, el control de accesos a áreas de alta seguridad y la verificación del",
@@ -47,7 +48,7 @@ export const operations = [
     },
     {
         id: 4,
-        title: "Operaciones Especiales",
+        title: "Operaciones especiales TAR - CIT",
         image: brkEspeciales    ,
         document: alarmaPrincipalPDF,
         shortDescription: "Contribuir a la gestión integral del riesgo en las operaciones especiales mediante la supervisión, monitoreo y análisis de eventos asociados a operaciones críticas, utilizando sistemas de geolocalización,",
@@ -59,7 +60,7 @@ export const operations = [
     },
     {
         id: 5,
-        title: "Apertura Segura Puerta 5",
+        title: "Comand center CB",
         image: ejemplo,
         document: alarmaPrincipalPDF,
         shortDescription: "Controlar y verificar el proceso de apertura de la Puerta 5 mediante la validación de claves randómicas generadas para cada transacción, evaluando los riesgos asociados al acceso y asegurando el cumplimiento de los procedimientos de seguridad definidos",
@@ -71,7 +72,7 @@ export const operations = [
     },
     {
         id: 6,
-        title: "ATM",
+        title: "Control acceso ATM",
         image: ejemplo,
         document: alarmaPrincipalPDF,
         shortDescription: "Contribuir a la seguridad de los cajeros automáticos mediante la custodia y verificación segura de las claves de alarma proporcionadas por el cliente,",
@@ -83,8 +84,8 @@ export const operations = [
     },
     {
         id: 7,
-        title: "Control Electronico de Efectivo",
-        image: ejemplo,
+        title: "E pago",
+        image: brk_Epago,
         document: alarmaPrincipalPDF,
         shortDescription: "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure",
         description: "Lorem ipsum dolor sit amet consectetur, adipiscing elit imperdiet eu augue ac, natoque netus fusce pretium. Luctus duis viverra pulvinar habitasse platea a urna aliquet, tortor nisl nibh massa sociosqu hac placerat class lacus, dapibus quis ultricies mollis augue tincidunt ad. Nulla primis dis tempus feugiat sodales litora pretium etiam, magnis ante tempor rhoncus habitant nibh cras nisl, scelerisque non posuere himenaeos lobortis porttitor montes.",
@@ -95,7 +96,7 @@ export const operations = [
     },
     {
         id: 8,
-        title: "Control de Acceso de Alta Seguridad",
+        title: "Control Acceso Alta",
         image: brkBiometria,
         document: alarmaPrincipalPDF,
         shortDescription: "Contribuir a la gestión integral del riesgo mediante la supervisión remota de los procesos de apertura de sucursales, la identificación y evaluación de amenazas, el control de accesos a áreas de alta seguridad y la verificación",
