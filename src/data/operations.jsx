@@ -5,6 +5,7 @@ import brkVideo from "../assets/images/brk_video.png"
 import brkBiometria from "../assets/images/brk_biometria.png"
 import brkEspeciales from "../assets/images/brk_especiales.png"
 import brkEpago from "../assets/images/brk_Epago.jpg"
+import brkAtm from "../assets/images/brkAtm.png"
 import alarmaPrincipalPDF from "../assets/documents/pruebaOperation.pdf"
 
 export const operations = [
@@ -73,7 +74,7 @@ export const operations = [
     {
         id: 6,
         title: "Control acceso ATM",
-        image: ejemplo,
+        image: brkAtm,
         document: alarmaPrincipalPDF,
         shortDescription: "Contribuir a la seguridad de los cajeros automáticos mediante la custodia y verificación segura de las claves de alarma proporcionadas por el cliente,",
         description: "Contribuir a la seguridad de los cajeros automáticos mediante la custodia y verificación segura de las claves de alarma proporcionadas por el cliente, aplicando los controles establecidos para prevenir accesos no autorizados y reducir los riesgos asociados a la activación, desactivación o gestión de alarmas.",
