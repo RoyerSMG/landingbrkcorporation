@@ -172,7 +172,7 @@ export const locations = [
         city:"Manizales",
         regional:"Occidente",
         position:[5.054056, -75.498961],
-        headquarter:"BRK Aguachica",
+        headquarter:"BRK Manizales",
         address:"Cl. 62 #33-15, Manizales, Caldas",
         phone:"(604) 444-4444",
         risk:"Bajo",

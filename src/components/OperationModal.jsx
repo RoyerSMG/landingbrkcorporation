@@ -22,18 +22,6 @@ export default function OperationModal({
                 <p>
                     {operation.description}
                 </p>
-                {/* <h3>
-                    Funciones
-                </h3>
-                <ul>
-                    {
-                        operation.functions.map(item=>(
-                            <li key={item}>
-                                {item}
-                            </li>
-                        ))
-                    }
-                </ul> */}
             </div>
 
             <div className="modal-footer">

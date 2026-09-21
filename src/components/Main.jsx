@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-import slider from '../assets/images/slider-inicio.png';
+import Modal from "./common/Modal";
 import mision from '../assets/images/mision.webp';
 import vision from '../assets/images/vision.webp';
 
@@ -11,9 +10,10 @@ import OperationCard from './OperationCard';
 import { operations } from '../data/operations';
 
 import OperationModal from "./OperationModal";
-import CoverageMap from "./maps/CoverageMap";
 import CoverageSection from "./maps/CoverageSection";
 import Hero from "./hero/Hero";
+
+import { staffData } from "../data/staffData";
 
 export const Main = () => {
     const [selectedOperation, setSelectedOperation] = useState(null);
@@ -27,6 +27,8 @@ export const Main = () => {
     const closeModal = () => {
         setIsModalOpen(false);
     };
+
+    const [selectedStaff, setSelectedStaff] = useState(null);
 
     return (
         <main className="pt-16">
@@ -48,84 +50,11 @@ export const Main = () => {
                                 />
                             ))
                         }
-
-                        {/* <div className="operation-card">
-                            <div className="operation-card-img">
-                                <img src={ejemplo} alt="ejemplo" />
-                            </div>
-                            <div className="operation-card-content">
-                                <h3>Alarma Principal</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipiscing, elit ornare vel imperdiet vehicula magna bibendum, habitasse suscipit phasellus felis semper. Viverra faucibus aenean nostra elementum lacus molestie fermentum massa pulvinar, scelerisque non vulputate et in justo vestibulum nam.
-                                </p>
-                                <button className="btn-detalle">Ver más</button>
-                            </div>
-                        </div>
-                        <div className="operation-card">
-                            <div className="operation-card-img">
-                                <img src={ejemplo} alt="ejemplo" />
-                            </div>
-                            <div className="operation-card-content">
-                                <h3>Alarma Soporte</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipiscing, elit ornare vel imperdiet vehicula magna bibendum, habitasse suscipit phasellus felis semper. Viverra faucibus aenean nostra elementum lacus molestie fermentum massa pulvinar, scelerisque non vulputate et in justo vestibulum nam.
-                                </p>
-                                <button className="btn-detalle">Ver más</button>
-                            </div>
-                        </div>
-                        <div className="operation-card">
-                            <div className="operation-card-img">
-                                <img src={ejemplo} alt="ejemplo" />
-                            </div>
-                            <div className="operation-card-content">
-                                <h3>Videoverificación</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipiscing, elit ornare vel imperdiet vehicula magna bibendum, habitasse suscipit phasellus felis semper. Viverra faucibus aenean nostra elementum lacus molestie fermentum massa pulvinar, scelerisque non vulputate et in justo vestibulum nam.
-                                </p>
-                                <button className="btn-detalle">Ver más</button>
-                            </div>
-                        </div>
-                        <div className="operation-card">
-                            <div className="operation-card-img">
-                                <img src={ejemplo} alt="ejemplo" />
-                            </div>
-                            <div className="operation-card-content">
-                                <h3>Operaciones Especiales</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipiscing, elit ornare vel imperdiet vehicula magna bibendum, habitasse suscipit phasellus felis semper. Viverra faucibus aenean nostra elementum lacus molestie fermentum massa pulvinar, scelerisque non vulputate et in justo vestibulum nam.
-                                </p>
-                                <button className="btn-detalle">Ver más</button>
-                            </div>
-                        </div>
-                        <div className="operation-card">
-                            <div className="operation-card-img">
-                                <img src={ejemplo} alt="ejemplo" />
-                            </div>
-                            <div className="operation-card-content">
-                                <h3>Puerta 5</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipiscing, elit ornare vel imperdiet vehicula magna bibendum, habitasse suscipit phasellus felis semper. Viverra faucibus aenean nostra elementum lacus molestie fermentum massa pulvinar, scelerisque non vulputate et in justo vestibulum nam.
-                                </p>
-                                <button className="btn-detalle">Ver más</button>
-                            </div>
-                        </div>
-                        <div className="operation-card">
-                            <div className="operation-card-img">
-                                <img src={ejemplo} alt="ejemplo" />
-                            </div>
-                            <div className="operation-card-content">
-                                <h3>ATM</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipiscing, elit ornare vel imperdiet vehicula magna bibendum, habitasse suscipit phasellus felis semper. Viverra faucibus aenean nostra elementum lacus molestie fermentum massa pulvinar, scelerisque non vulputate et in justo vestibulum nam.
-                                </p>
-                                <button className="btn-detalle">Ver más</button>
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </section>
 
-            <section 
+            <section
                 id="empresa"
             >
                 <div className="w-4/5 max-w-7xl mx-auto">
@@ -167,77 +96,82 @@ export const Main = () => {
                     </Swiper>
 
                     <div className="operational-staff">
-                        <div className="operational-staff-header" data-aos="fade-up">
-                            <h3>Personal Operativo</h3>
+                        <div
+                            className="operational-staff-header"
+                            data-aos="fade-up"
+                        >
+                            <h3>
+                                Personal Operativo
+                            </h3>
                             <p>
                                 Nuestro talento humano especializado para la operación
                                 y gestión de la seguridad.
                             </p>
                         </div>
 
-                        <div className="kpi-grid" data-aos="fade-up">
-                            {/* OPERADORES */}
-                            <div
-                                className="staff-kpi"
-                                data-tooltip="Profesionales encargados del monitoreo y gestión de eventos en tiempo real."
-                            >
-                                <div className="kpi-icon">
-                                    👤
-                                </div>
-                                <div className="kpi-info">
-                                    <span className="kpi-label">
-                                        Operadores
+                        {/* KPI */}
+                        <div
+                            className="kpi-grid"
+                            data-aos="fade-up"
+                        >
+                            {staffData.map((staff) => (
+                                <div
+                                    key={staff.id}
+                                    className="staff-kpi"
+                                    data-tooltip={staff.description}
+                                    onClick={() => setSelectedStaff(staff)}
+                                >
+                                    <div className="kpi-icon">
+                                        {staff.icon}
+                                    </div>
+                                    <div className="kpi-info">
+                                        <span className="kpi-label">
+                                            {staff.title}
+                                        </span>
+                                        <strong className="kpi-value">
+                                            {staff.value}
+                                        </strong>
+                                    </div>
+                                    <span className="kpi-tooltip">
+                                        {staff.description}
                                     </span>
-                                    <strong className="kpi-value">
-                                        28
-                                    </strong>
                                 </div>
-                                <span className="kpi-tooltip">
-                                    Personal encargado del monitoreo continuo,
-                                    gestión de alarmas y atención de eventos críticos.
-                                </span>
-                            </div>
-
-                            {/* TECNICOS */}
-                            <div className="staff-kpi">
-                                <div className="kpi-icon">
-                                    🔧
-                                </div>
-                                <div className="kpi-info">
-                                    <span className="kpi-label">
-                                        Técnicos
-                                    </span>
-                                    <strong className="kpi-value">
-                                        4
-                                    </strong>
-                                </div>
-                                <span className="kpi-tooltip">
-                                    Personal técnico especializado en soporte,
-                                    mantenimiento y operación de sistemas tecnológicos.
-                                </span>
-                            </div>
-
-                            {/* COORDINADORES */}
-                            <div className="staff-kpi">
-                                <div className="kpi-icon">
-                                    👔
-                                </div>
-                                <div className="kpi-info">
-                                    <span className="kpi-label">
-                                        Coordinadores
-                                    </span>
-                                    <strong className="kpi-value">
-                                        4
-                                    </strong>
-                                </div>
-                                <span className="kpi-tooltip">
-                                    Responsables de coordinar equipos operativos,
-                                    supervisar procesos y garantizar la continuidad
-                                    de la operación.
-                                </span>
-                            </div>
+                            ))}
                         </div>
                     </div>
+
+                    {/* MODAL PERSONAL */}
+                    <Modal
+                        isOpen={!!selectedStaff}
+                        onClose={() => setSelectedStaff(null)}
+                        width="900px"
+                    >
+                        {selectedStaff && (
+                            <>
+                                <div 
+                                    className="modal-body"
+                                    style={{ 
+                                        padding: '10px', 
+                                        background: 'var(--background-primary)',
+                                        textAlign: 'center'
+                                    }}
+                                >
+                                    <h2 style={{ color: 'white' }}>
+                                        {selectedStaff.title}
+                                    </h2>
+                                    {/* <p>
+                                        {selectedStaff.description}
+                                        </p> */}
+                                </div>
+                                <img
+                                    src={selectedStaff.image}
+                                    alt={selectedStaff.title}
+                                    className="modal-image"
+                                    style={{ height: '550px' }}
+                                />
+                            </>
+                        )}
+                    </Modal>
                 </div>
             </section>
 
