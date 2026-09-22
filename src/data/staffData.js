@@ -1,4 +1,4 @@
-import brkOperadores from "../assets/images/brk_operadores.png"
+import brkOperadores from "../assets/images/brk_operadores.webp"
 
 export const staffData = [
     {

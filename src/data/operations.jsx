@@ -1,11 +1,11 @@
-import ejemplo from "../assets/images/puerta5.jpeg"
-import brkSede from "../assets/images/brk_sede.png"
-import brkBoveda from "../assets/images/brk_boveda.png"
-import brkVideo from "../assets/images/brk_video.png"
-import brkBiometria from "../assets/images/brk_biometria.png"
-import brkEspeciales from "../assets/images/brkEspeciales1.png"
-import brkEpago from "../assets/images/brk_Epago.jpg"
-import brkAtm from "../assets/images/brkAtm1.png"
+import brkPuerta5 from "../assets/images/puerta5.webp"
+import brkSede from "../assets/images/brk_sede.webp"
+import brkBoveda from "../assets/images/brk_boveda.webp"
+import brkVideo from "../assets/images/brk_video.webp"
+import brkBiometria from "../assets/images/brk_biometria.webp"
+import brkEspeciales from "../assets/images/brkEspeciales1.webp"
+import brkEpago from "../assets/images/brk_Epago.webp"
+import brkAtm from "../assets/images/brkAtm1.webp"
 import alarmaPrincipalPDF from "../assets/documents/pruebaOperation.pdf"
 
 export const operations = [
@@ -62,7 +62,7 @@ export const operations = [
     {
         id: 5,
         title: "Comand center CB",
-        image: ejemplo,
+        image: brkPuerta5,
         document: alarmaPrincipalPDF,
         shortDescription: "Controlar y verificar el proceso de apertura de la Puerta 5 mediante la validación de claves randómicas generadas para cada transacción, evaluando los riesgos asociados al acceso y asegurando el cumplimiento de los procedimientos de seguridad definidos",
         description: "Controlar y verificar el proceso de apertura de la Puerta 5 mediante la validación de claves randómicas generadas para cada transacción, evaluando los riesgos asociados al acceso y asegurando el cumplimiento de los procedimientos de seguridad definidos, con el fin de prevenir vulnerabilidades, accesos indebidos y eventos que comprometan la integridad de tripulantes y valores en custodia ",
